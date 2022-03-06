@@ -17,7 +17,7 @@ git clone https://github.com/thanhndbkhn/backend-coding-test.git
 cd backend-coding-test
 npm i
 ```
-## order-service API document (Swagger)
+## API document (Swagger)
 ```bash
 access: http://localhost:8010/doc
 ````
