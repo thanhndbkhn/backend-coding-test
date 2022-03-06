@@ -5,11 +5,9 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "localhost:8010",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/health": {
       "get": {
@@ -33,16 +31,16 @@
               "type": "object",
               "properties": {
                 "start_lat": {
-                  "example": "any"
+                  "example": "60"
                 },
                 "start_long": {
-                  "example": "any"
+                  "example": "120"
                 },
                 "end_lat": {
-                  "example": "any"
+                  "example": "60"
                 },
                 "end_long": {
-                  "example": "any"
+                  "example": "120"
                 },
                 "rider_name": {
                   "example": "any"
@@ -61,7 +59,24 @@
       },
       "get": {
         "description": "",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "perPage",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
         "responses": {}
       }
     },

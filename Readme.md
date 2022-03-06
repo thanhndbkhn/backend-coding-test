@@ -1,3 +1,33 @@
+## Usage
+
+Then, client app can use at port: 8010
+
+## How to run in development
+
+Please follow these steps
+
+````require
+Ensure `node (>8.6 and <= 10)` and `npm` are installed
+```bash
+git clone https://github.com/thanhndbkhn/backend-coding-test.git
+
+cd backend-coding-test
+npm i
+
+## order-service API document (Swagger)
+```bash
+access: http://localhost:8010/doc
+````
+
+## Tool used
+
+```bash
+   1. `eslint` - for linting
+   2. `nyc` - for code coverage
+   3. `pre-push` - for git pre push hook running tests
+   4. `winston` - for logging
+```
+
 # Xendit Coding Exercise
 
 The goal of these exercises are to assess your proficiency in software engineering that is related to the daily work that we do at Xendit. Please follow the instructions below to complete the assessment.
