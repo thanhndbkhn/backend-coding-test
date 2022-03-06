@@ -6,15 +6,18 @@ Then, client app can use at port: 8010
 
 Please follow these steps
 
-````require
+```bash
+Require:
 Ensure `node (>8.6 and <= 10)` and `npm` are installed
+```
 ```bash
 git clone https://github.com/thanhndbkhn/backend-coding-test.git
-
+```
+```bash
 cd backend-coding-test
 npm i
-
-## order-service API document (Swagger)
+```
+## API document (Swagger)
 ```bash
 access: http://localhost:8010/doc
 ````
