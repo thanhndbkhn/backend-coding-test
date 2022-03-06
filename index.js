@@ -17,9 +17,10 @@ const logger = require('./lib/winston');
 const buildSchemas = require('./src/schemas');
 
 db.serialize(() => {
-    buildSchemas(db);
+  buildSchemas(db);
 
-    const app = require('./src/app')(db);
-    app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
-    app.listen(port, () => console.log(`App started and listening on port ${port}`));
+  const app = require('./src/app')(db);
+
+  app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+  app.listen(port, () => logger.info(`App started and listening on port ${port}`));
 });
